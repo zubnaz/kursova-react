@@ -1,0 +1,30 @@
+ div.content h1 {
+     text-align: center;
+ }
+
+ div.content {
+     width: 50%;
+     margin: auto;
+     color: white;
+     background-color: #413f28c2;
+     padding: 30px;
+     display: flex;
+     flex-direction: column;
+     flex: 1;
+ }
+
+ div.content div.img2 {
+     width: 50%;
+
+ }
+
+ div.content div.img1 {
+     align-self: flex-end;
+     width: 50%;
+ }
+
+
+ div.content div img {
+     width: 100%;
+
+ }

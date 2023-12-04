@@ -1,0 +1,138 @@
+div.content h1 {
+    text-align: center;
+
+}
+
+div.content {
+    width: 50%;
+    min-width: 500px;
+    margin: auto;
+    color: white;
+    background-color: #413f28c2;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+div.content div.autos {
+    display: flex;
+    flex-direction: column;
+    row-gap: 5px;
+}
+
+div.content div.autos>div {
+    display: flex;
+    column-gap: 0px;
+}
+
+div.content div.autos>div div.img {
+    width: 50%;
+    display: inline-block;
+}
+
+div.content div.autos>div div.img img {
+    width: 100%;
+    height: 100%;
+}
+
+div.content div.autos>div div.info {
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    width: 100%;
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
+    background-color: #363521c2;
+}
+
+div.content div.autos>div div.buttons {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
+}
+
+div.content div.autos>div div.buttons a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 21px;
+    margin-left: 1px;
+    transition: all 0.1s;
+    text-align: center;
+
+}
+
+div.content div.autos>div div.buttons a:hover {
+    background-color: #565044;
+}
+
+div.content div.filter {
+    display: flex;
+}
+
+div.content div.filter div.filter-sort {
+    width: 30%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 70% 30%;
+    grid-template-rows: 50% 50%;
+}
+
+div.content div.filter div.filter-sort select {
+    background-color: #413f28c2;
+    color: white;
+    border: none;
+    outline: none;
+    font-size: 21px;
+    padding: 5px;
+
+}
+
+div.content div.filter div.filter-sort select option {
+    background-color: #565044;
+    color: white;
+    border: none;
+    font-size: 21px;
+    padding: 5px;
+}
+
+div.content div.filter div.filter-sort button,
+div.content div.filter div.filter-find button {
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-size: 21px;
+    margin-left: 1px;
+    transition: all 0.1s;
+    text-align: center;
+    background-color: #413f28c2;
+    border: none;
+    margin-left: 5px;
+}
+
+div.content div.filter div.filter-sort button:hover,
+div.content div.filter div.filter-find button:hover {
+    background-color: #565044;
+}
+
+div.content div.filter div.filter-find {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    padding: 10px;
+    row-gap: 5px;
+}
+
+div.content div.filter div.filter-find input {
+    background-color: #413f28c2;
+    outline: none;
+    border: none;
+    padding: 5px;
+    color: white;
+    font-size: 21px;
+}
+
+div.content div.filter div.filter-find input::placeholder {
+    color: white;
+}

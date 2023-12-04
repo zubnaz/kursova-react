@@ -1,0 +1,20 @@
+nav.menu {
+    background-color: hsl(55, 24%, 21%);
+    width: 100%;
+    padding: 10px;
+    padding-left: 0;
+    position: fixed;
+}
+
+nav.menu a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 21px;
+    margin-left: 1px;
+    transition: all 0.1s;
+}
+
+nav.menu a:hover {
+    background-color: #565044;
+}
