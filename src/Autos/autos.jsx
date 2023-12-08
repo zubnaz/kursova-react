@@ -62,7 +62,7 @@ export default function Autos() {
                     <div>
                         <div className='img'><img src={element.image} /></div>
                         <div className='info'><div>{element.mark}</div><div>{element.model}</div> {element.price}$</div>
-                        <div className='buttons'><Link to={`information/${element.id}`}>Information</Link>{checkIsLogin ? <button className={`buy_${element.id}`} onClick={() => {
+                        <div className='buttons'><Link to={`information/${element.id}`}>Information</Link>{checkIsLogin == true ? <button className={`buy_${element.id}`} onClick={() => {
                             const a = document.querySelector(`div.buttons button.buy_${element.id}`);
                             a.disabled = true;
                             a.innerHTML = "Bought";
