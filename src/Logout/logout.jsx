@@ -13,6 +13,7 @@ export default function Logout() {
         });
         //loginAccount.logout();
         exitOrEnter(false);
+        userEnter(false);
     }
     useEffect(() => {
         exit();
