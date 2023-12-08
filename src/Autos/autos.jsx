@@ -2,13 +2,15 @@ import { useEffect, useState } from 'react';
 import './autos.css';
 import { Link } from 'react-router-dom';
 import { useForm } from "react-hook-form";
-import { checkIsLogin } from '../Menu/menu';
 export default function Autos() {
     var data
     var by = "price";
     var type = "up";
     const [autos, setData] = useState([]);
-
+    const [userIs, setUser] = useState(false);
+    userEnter = (a) => {
+        setUser(a);
+    }
     const { register, handleSubmit } = useForm();
     const sort = async (sortProp) => {
         //console.log(s.type + " " + s.by);
@@ -62,7 +64,7 @@ export default function Autos() {
                     <div>
                         <div className='img'><img src={element.image} /></div>
                         <div className='info'><div>{element.mark}</div><div>{element.model}</div> {element.price}$</div>
-                        <div className='buttons'><Link to={`information/${element.id}`}>Information</Link>{checkIsLogin == true ? <button className={`buy_${element.id}`} onClick={() => {
+                        <div className='buttons'><Link to={`information/${element.id}`}>Information</Link>{userIs == true ? <button className={`buy_${element.id}`} onClick={() => {
                             const a = document.querySelector(`div.buttons button.buy_${element.id}`);
                             a.disabled = true;
                             a.innerHTML = "Bought";
@@ -73,14 +75,4 @@ export default function Autos() {
         </div >
     );
 }
-/*<div className='autos'>
-                {autos.map((element) => {
-                    console.log(element);
-                    <div>
-                        <div className='img'><img src={element.image} /></div>
-                        <div className='info'><div>{element.mark}</div><div>{element.model}</div> {element.price}$</div>
-                        <div className='buttons'><Link to={`information/${element.id}`}>Information</Link>{checkIsLogin ? <Link to={`buy/${element.id}`}>Buy</Link> : ""}</div>
-                    </div>
-                }
-                )}
-            </div>*/
+export var userEnter;
