@@ -1,12 +1,11 @@
 import { Link } from "react-router-dom";
 import './menu.css';
 import { useEffect, useState } from "react";
+import { userEnter } from "../Autos/autos";
 export default function Menu() {
     const [isLogin, changeIsLogin] = useState(false);
-    exitOrEnter = (tf) => { changeIsLogin(tf) }
-    checkIsLogin = () => {
-        return isLogin ? true : false;
-    }
+    exitOrEnter = (tf) => { changeIsLogin(tf); checkIsLogin = isLogin }
+    checkIsLogin = isLogin;
     const [isAdmin, changeIsAdmin] = useState("No");
     changeRole = (a) => { changeIsAdmin(a) }
     const check = async () => {

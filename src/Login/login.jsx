@@ -1,7 +1,6 @@
 import "./login.css";
 import { useForm } from "react-hook-form";
 import { changeRole, exitOrEnter } from "../Menu/menu";
-import { userEnter } from "../Autos/autos";
 export default function Login() {
     const { register, handleSubmit } = useForm();
     const login = async (login_) => {
@@ -24,7 +23,6 @@ export default function Login() {
             //loginAccount.enter();
             changeRole(test.isAdmin);
             exitOrEnter(true);
-            userEnter(true);
         }
     }
 

@@ -1,7 +1,6 @@
 import { useEffect } from "react";
 import { useNavigate } from "react-router-dom";
 import { changeRole, exitOrEnter } from "../Menu/menu";
-import { userEnter } from "../Autos/autos";
 
 export default function Logout() {
     const navigate = useNavigate();
@@ -14,7 +13,6 @@ export default function Logout() {
         });
         //loginAccount.logout();
         exitOrEnter(false);
-        userEnter(false);
     }
     useEffect(() => {
         exit();
