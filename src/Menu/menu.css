@@ -1,12 +1,11 @@
-nav.menu {
+div.menu {
     background-color: hsl(55, 24%, 21%);
     width: 100%;
     padding: 10px;
     padding-left: 0;
-    position: fixed;
 }
 
-nav.menu a {
+div.menu nav a {
     text-decoration: none;
     color: white;
     padding: 10px;
@@ -15,6 +14,6 @@ nav.menu a {
     transition: all 0.1s;
 }
 
-nav.menu a:hover {
+div.menu nav a:hover {
     background-color: #565044;
 }

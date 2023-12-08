@@ -71,7 +71,7 @@ div.content div.filter {
     display: flex;
 }
 
-div.content div.filter div.filter-sort {
+div.content div.filter form.filter-sort {
     width: 30%;
     padding: 10px;
     display: grid;
@@ -79,7 +79,7 @@ div.content div.filter div.filter-sort {
     grid-template-rows: 50% 50%;
 }
 
-div.content div.filter div.filter-sort select {
+div.content div.filter form.filter-sort select {
     background-color: #413f28c2;
     color: white;
     border: none;
@@ -89,7 +89,7 @@ div.content div.filter div.filter-sort select {
 
 }
 
-div.content div.filter div.filter-sort select option {
+div.content div.filter form.filter-sort select option {
     background-color: #565044;
     color: white;
     border: none;
@@ -97,8 +97,8 @@ div.content div.filter div.filter-sort select option {
     padding: 5px;
 }
 
-div.content div.filter div.filter-sort button,
-div.content div.filter div.filter-find button {
+div.content div.filter form.filter-sort button,
+div.content div.filter form.filter-find button {
     outline: none;
     color: white;
     padding: 5px;
@@ -111,12 +111,12 @@ div.content div.filter div.filter-find button {
     margin-left: 5px;
 }
 
-div.content div.filter div.filter-sort button:hover,
-div.content div.filter div.filter-find button:hover {
+div.content div.filter form.filter-sort button:hover,
+div.content div.filter form.filter-find button:hover {
     background-color: #565044;
 }
 
-div.content div.filter div.filter-find {
+div.content div.filter form.filter-find {
     display: flex;
     flex-direction: column;
     width: 70%;
@@ -124,15 +124,37 @@ div.content div.filter div.filter-find {
     row-gap: 5px;
 }
 
-div.content div.filter div.filter-find input {
+div.content div.filter form.filter-find input {
     background-color: #413f28c2;
     outline: none;
     border: none;
     padding: 5px;
     color: white;
     font-size: 21px;
+    transition: all 0.1s;
 }
 
-div.content div.filter div.filter-find input::placeholder {
+div.content div.filter form.filter-find input:focus {
+    border: 1px solid white;
+}
+
+div.content div.filter form.filter-find input::placeholder {
     color: white;
+}
+
+div.buttons button {
+    outline: none;
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    font-size: 21px;
+    margin-left: 1px;
+    transition: all 0.1s;
+    text-align: center;
+    border: none;
+    background-color: inherit;
+}
+
+div.buttons button:hover {
+    background-color: #565044;
 }

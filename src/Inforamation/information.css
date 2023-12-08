@@ -1,0 +1,48 @@
+div.inform {
+    display: grid;
+    grid-template-columns: 40% 10% 50%;
+    grid-template-rows: 7% 7% 7% 7% 7% 7%;
+    flex: 1;
+    justify-self: center;
+    padding: 10px;
+    width: 50%;
+    min-width: 500px;
+    margin: auto;
+    color: white;
+    background-color: #413f28c2;
+    font-size: 21px;
+}
+
+div.inform div.img {
+    grid-row: span 5;
+    padding: 30px;
+}
+
+div.inform div:nth-child(n+2) {
+    padding-left: 10px;
+    border: 1px solid white;
+}
+
+div.inform div.img img {
+    width: 100%;
+    height: 100%;
+}
+
+div.inform button {
+    grid-column: 2/-1;
+    outline: none;
+    color: white;
+    padding: 5px;
+    font-size: 21px;
+    margin-left: 1px;
+    transition: all 0.1s;
+    text-align: center;
+    background-color: #413f28c2;
+    border: none;
+    margin-left: 5px;
+    margin: 5px
+}
+
+div.inform button:hover {
+    background-color: #565044;
+}
